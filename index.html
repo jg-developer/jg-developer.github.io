@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <meta name="theme-color" content="#222426" />
+    <title>Jonathan Gomes - Desenvolvedor Web</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png" sizes="32x32">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="portfolio">
+    <meta name="GOOGLEBOT" content="INDEX, FOLLOW" />
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Jonathan Gomes" />
+    <meta name="copyright" content="Copyright 2018 Jonathan Gomes. Todos os direitos reservados." />
+    <meta property="og:url" content="http://jg-developer.github.io">
+    <meta name="geo.placename" content="Jau, São Paulo, Brasil" />
+    <meta property="og:title" content="Jonathan Gomes - Desenvolvedor Web">
+    <meta property="og:site_name" content="Desenvolvedor Web | Jonathan Gomes">
+    <meta property="og:description" content="Me chamo Jonathan Gomes, sou um desenvolvedor web criativo, e neste site você vera um pouco sobre mim e meu portfólio.">
+    <meta property="og:keywords" content="jonathan, jonathan gomes, gomes, desenvolvedor web, web designer, front-end, back-end, full-stack, fatec, jau, fatec jau, portfolio, portfólio">
+</head>
+
+<body>
+    <div class="gallery">
+        <div id="close">
+            <span class="g-btn" id="closegallery">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="gallerycontrols">
+
+            <img class="g-img" src="" alt="">
+            <div id="controls">
+
+                <span class="g-btn" id="previmage">
+                    <i class="fas fa-angle-left"></i>
+                </span>
+                <span class="g-btn" id="nextimage">
+                    <i class="fas fa-angle-right"></i>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <header>
+        <nav id="menu">
+            <div class="menu-icon" id="btn_menu">
+                <span></span>
+            </div>
+            <ul id="menu_itens">
+                <li>
+                    <a href="#about">Sobre</a>
+                </li>
+                <li>
+                    <a href="#skills">Habilidades</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfólio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about" id="about">
+
+        <div class="text">
+            <span class="j_hi">Olá!</span>
+            </br>
+            <span class="j_my">Meu nome é</span>
+            </br>
+            <span class="j_name">Jonathan</span>
+            </br>
+            <span class="j_gomes">Gomes
+                <span class="j_have">, tenho</span>
+            </span>
+            </br>
+            <div class="inf">
+                <span class="j_20">20</span>
+                <div class="more">
+                    <span class="j_years">anos de idade, sou</span>
+                    <span class="j_dev">Desenvolvedor Web</span>
+                </div>
+            </div>
+            <span class="j_nice">e muito criativo!</span>
+        </div>
+        <img src="assets/images/jonathan.png" alt="Jonathan Gomes" title="Jonathan Gomes">
+    </section>
+    <section class="content skills" id="skills">
+        <h2>Habilidades</h2>
+        <div class="flex">
+            <div class="card">
+                <span class="icon">
+                    <i class="fab fa-html5"></i>
+                </span>
+                <h4 class="title">HTML</h4>
+            </div>
+            <div class="card">
+                <span class="icon">
+                    <i class="fab fa-css3-alt"></i>
+                </span>
+                <h4 class="title">CSS</h4>
+            </div>
+            <div class="card">
+                <span class="icon">
+                    <i class="fab fa-js-square"></i>
+                </span>
+                <h4 class="title">JAVASCRIPT</h4>
+            </div>
+            <div class="card">
+                <span class="icon">
+                    <i class="fab fa-php"></i>
+                </span>
+                <h4 class="title">PHP</h4>
+            </div>
+            <div class="card">
+                <span class="icon">
+                    <i class="fab fa-wordpress"></i>
+                </span>
+                <h4 class="title">WORDPRESS</h4>
+            </div>
+            <div class="card">
+                <span class="icon">
+                    <i class="fab fa-sass"></i>
+                </span>
+                <h4 class="title">SASS</h4>
+            </div>
+            <div class="card">
+                <span class="icon bootstrap">
+                    <i class="fab fa-twitter" class="bootstrap-icon"></i>
+                </span>
+                <h4 class="title">BOOTSTRAP</h4>
+            </div>
+            <div class="card">
+                <span class="icon">
+                    <i class="fab fa-gulp"></i>
+                </span>
+                <h4 class="title">GULP</h4>
+            </div>
+            <div class="card">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <h4 class="title">GITHUB</h4>
+            </div>
+        </div>
+    </section>
+    <section class="content portfolio" id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="flex">
+            <div class="item order-coffee" onclick="opengalery(this)" title="Order Coffee" data-img="order-coffee" data-amount="8">
+                <h3>Order Coffee</h3>
+                <p>Sistema Web para cafeterias desenvolvido com HTML, CSS, Jquery, Materialize, PHP, e MySQL para fins acadêmicos.</p>
+                <div class="overlay"></div>
+            </div>
+            <a href="http://www.nicinovajau.com.br/hackathon/aerocris" target="a_blank" class="item aerocris" title="Aerocris">
+                <h3>Aerocris</h3>
+                <p>Site institucional desenvolvido com HTML, CSS, Javascript, e Wordpress durante uma hackathon.</p>
+                <div class="overlay"></div>
+            </a>
+            <div class="item guia-clinicas" onclick="opengalery(this)" title="Guia de Clínicas" data-img="guia-clinicas" data-amount="8">
+                <h3>Guia de Clínicas</h3>
+                <p>Sistema Web de guia de clínicas desenvolvido com HTML, CSS, Javascript, Materialize, PHP, SOA, e Rest para fins acadêmicos.</p>
+                <div class="overlay"></div>
+            </div>
+            <div class="item tcc" onclick="opengalery(this)" title="Sistema Web para pizzaria delivery" data-img="pizzaria" data-amount="31">
+                <h3>Sistema Web para pizzaria delivery</h3>
+                <p>Sistema web para pizzaria delivery desenvolvido com HTML, CSS, Javascript, Bootstrap, PHP, e MySQL para fins acadêmicos.</p>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </section>
+    <section class="content contact" id="contact">
+        <h2>Contato</h2>
+        <form action="https://formspree.io/jonathan.gomes213@gmail.com" method="POST">
+            <input required type="text" name="nome" placeholder="Nome">
+            <input required type="email" name="_replyto" placeholder="Email">
+            <textarea required name="mensagem" placeholder="Mensagem"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <div class="icons">
+            <a target="a_blank" href="https://github.com/jg-developer">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="a_blank" href="https://www.linkedin.com/in/jonathan-gomes/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a target="a_blank" href="https://www.facebook.com/jonathan.gomes.180">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a target="a_blank" href="https://www.instagram.com/_jonathan_gomes/">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <span>2018 © Jonathan Gomes - Todos os direitos reservados</span>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
