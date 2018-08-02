@@ -141,6 +141,7 @@ nav.mobile {
         }
         .j_name {
             font-size: 2.5em;
+            display:inline;
         }
         .j_gomes {
             font-size: 1.7em;
@@ -298,6 +299,7 @@ section.content {
             transition: color .5s linear;
             position: relative;
             cursor: pointer;
+            transition: background .6s ease-out;
             .overlay {
                 position: absolute;
                 top: 0;
@@ -324,6 +326,7 @@ section.content {
             }
             &:hover {
                 color: #ffffff;
+                background-size: 110% 110%;
             }
         }
         .order-coffee {

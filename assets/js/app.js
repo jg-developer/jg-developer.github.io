@@ -103,6 +103,7 @@ function opengalery(e) {
   let body = document.getElementsByTagName('body')[0];
   let gallery = document.getElementsByClassName('gallery')[0];
   let header = document.getElementsByTagName('header')[0];
+  let footer = document.getElementsByTagName('footer')[0];
   let sections = document.getElementsByTagName('section');
   let close = document.getElementById('closegallery');
   let prev = document.getElementById('previmage');
@@ -118,6 +119,7 @@ function opengalery(e) {
     sections[i].classList.add("bg-gallery");
   }
   header.classList.add("bg-gallery");
+  footer.classList.add("bg-gallery");
   close.addEventListener("click", function () {
     gallery.style.visibility = "hidden";
     body.style.overflowY = "visible";
@@ -125,11 +127,13 @@ function opengalery(e) {
       sections[i].classList.remove("bg-gallery");
     }
     header.classList.remove("bg-gallery");
+    footer.classList.remove("bg-gallery");
   });
   next.addEventListener("click", function () {
     if(index == amount){
       index = 0;
     }
+    image.src = '';
     index++;
     image.src = `assets/images/${work}-${index}.png`;
   });
@@ -138,9 +142,8 @@ function opengalery(e) {
       index = amount;
       index++;
     }
+    image.src = '';
     index--;
     image.src = `assets/images/${work}-${index}.png`;
   });
-  
-  console.log(`Galeria da ${work}, contém ${amount} fotos`);
 }
