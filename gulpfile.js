@@ -15,10 +15,10 @@ gulp.task('sass', ()=>
 );
 gulp.task('imagemin', () =>
     gulp.src('./assets/images/**')
-        .pipe(imagemin())
+        .pipe(imagemin({progressive: true, optimizationLevel: 7}))
         .pipe(gulp.dest('./assets/images'))
 );
 gulp.task('default', ()=>{
     gulp.watch('./assets/scss/*.scss', ['sass']);
-    gulp.watch('./assets/images/**', ['imagemin']);
+    //gulp.watch('./assets/images/**', ['imagemin']);
 });

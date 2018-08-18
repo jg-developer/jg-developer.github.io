@@ -52,6 +52,7 @@ function smoothScrollTo(endX, endY, duration) {
 };
 
 window.onload = () => {
+  Age();
   let w = window.outerWidth;
   const nav = document.querySelector('#menu');
   if (w > 780) {
@@ -115,7 +116,7 @@ function opengalery(e) {
   gallery.style.visibility = "visible";
   body.style.overflowY = "hidden";
   image.src = `assets/images/${work}-${index}.png`;
-  for(let i=0; i < sections.length; i++){
+  for (let i = 0; i < sections.length; i++) {
     sections[i].classList.add("bg-gallery");
   }
   header.classList.add("bg-gallery");
@@ -123,14 +124,14 @@ function opengalery(e) {
   close.addEventListener("click", function () {
     gallery.style.visibility = "hidden";
     body.style.overflowY = "visible";
-    for(let i=0; i < sections.length; i++){
+    for (let i = 0; i < sections.length; i++) {
       sections[i].classList.remove("bg-gallery");
     }
     header.classList.remove("bg-gallery");
     footer.classList.remove("bg-gallery");
   });
   next.addEventListener("click", function () {
-    if(index == amount){
+    if (index == amount) {
       index = 0;
     }
     image.src = '';
@@ -138,7 +139,7 @@ function opengalery(e) {
     image.src = `assets/images/${work}-${index}.png`;
   });
   prev.addEventListener("click", function () {
-    if(index == 1){
+    if (index == 1) {
       index = amount;
       index++;
     }
@@ -147,3 +148,17 @@ function opengalery(e) {
     image.src = `assets/images/${work}-${index}.png`;
   });
 }
+
+function Age(){
+  today = new Date;
+  birth = new Date("1997, 08, 18");
+  var age = today.getFullYear() - birth.getFullYear();
+  if (new Date(today.getFullYear(), today.getMonth(), today.getDate()) < new Date(today.getFullYear(), birth.getMonth(), birth.getDate()))
+    age--;
+
+  const ageEl = document.querySelector('.j_age');
+  ageEl.innerHTML = age;
+}
+setInterval(() => {
+  Age();
+}, 1000);
