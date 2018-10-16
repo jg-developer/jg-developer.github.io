@@ -331,6 +331,9 @@ section.content {
                 color: #ffffff;
                 background-size: 110% 110%;
             }
+            &:last-child{
+                margin-right: 50%;
+            }
         }
         .order-coffee {
             background-image: url('../images/order-coffee-1.png');
@@ -344,6 +347,10 @@ section.content {
         }
         .guia-clinicas {
             background-image: url('../images/guia-clinicas-1.png');
+        }
+        .sheercarnes{
+            background-image: url('../images/sheercarnes.png');
+            text-decoration: none;
         }
     }
 }
@@ -556,6 +563,9 @@ footer {
                     background-color: black;
                     opacity: 0.5;
                     display: inline-block;
+                }
+                &:last-child{
+                    margin-right: 0%;
                 }
             }
         }
